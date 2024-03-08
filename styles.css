@@ -1,0 +1,422 @@
+* {
+    color: black;
+}
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    min-height: 150vh;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+main {
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-content {
+    overflow-y: hidden;
+}
+
+.img img{
+    min-width: 400px;
+    max-width: 400px;    
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.imgs {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.section {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(1, 1, 1, 0.7);
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+
+}
+
+.header .navigation {
+    max-width: 100%;
+}
+
+.header .navigation ul li {
+    float: left;
+    position: relative;
+}
+
+.header .navigation ul li a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+    transition: all .2s ease;
+
+}
+
+.header .navigation ul li a:hover {
+    background-color: #685cfe;
+}
+
+.header .navigation ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgba(1, 1, 1, 0.7);
+    display: none;
+}
+
+.header .navigation ul li ul li a {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.header .navigation ul li ul li ul {
+    position: absolute;
+    top: 0;
+    right: 300px;
+
+}
+
+.header .navigation ul li ul li {
+    width: 100%;
+}
+
+.header .navigation ul li:hover>ul {
+    display: initial;
+}
+
+#toggle,
+.header label {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    width: 45px;
+    height: 35px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    line-height: 1.6;
+}
+
+.boton-saber-mas {
+    display: inline-block;
+    text-decoration: none;
+    color: #6cc091;
+    padding: 10px 30px;
+    border: 3px solid #6cc091;
+    border-radius: 30px;
+}
+
+#contacto {
+    background: #6cc091;
+    padding: 50px 0px;
+    color: #fff;
+}
+
+#contacto h4 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.datos-form {
+    display: flex;
+}
+
+.datos-form div {
+    padding: 10px;
+    flex: 1;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form input,
+.form textarea {
+    background: #6cc091;
+    border-radius: 10px;
+
+    border: 2px solid #8dcca9;
+    padding: 10px 5px;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #fff;
+}
+
+.contraseña {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 50%;
+}
+
+.boton-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-formulario .boton-saber-mas {
+    display: flex;
+    border: 1px solid #fff;
+    align-items: center;
+    text-align: center;
+    transition: 0.4s;
+    width: 30%;
+    color: #fff;
+    justify-content: center;
+}
+
+.boton-formulario .boton-saber-mas:hover {
+    background: #4fa776ad;
+}
+
+
+.footer {
+    background-color: var(--grey);
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media(max-width:950px) {
+    .header label {
+        display: initial;
+
+    }
+
+    .header {
+        padding: 20px 10%;
+    }
+
+    .header .navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(1, 1, 1, 0.7);
+        display: none;
+    }
+
+    .header .navigation ul li {
+        width: 100%;
+    }
+
+    .header .navigation ul li a {
+        padding: 8px 30px 8px 10%;
+    }
+
+    .header .navigation ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .header .navigation ul li ul li {
+        background-color: rgba(1, 1, 1, 0.7);
+    }
+
+    .header .navigation ul li ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    #toggle:checked~.navigation {
+        display: block;
+        transition: 05s;
+    }
+
+    .datos-form {
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+}
+
+/* xs*/
+@media (min-width: 200px) {
+    .container {
+        max-width: 248px;
+    }
+
+    body,
+    p {
+        font-size: 18px;
+    }
+}
+
+/* s */
+@media (min-width: 640px) {
+    .container {
+        max-width: 512px;
+    }
+
+    body,
+    p {
+        font-size: 14px;
+    }
+}
+
+/* m */
+@media (min-width: 768px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    body,
+    p {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
+
+/* l */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1280px;
+    }
+
+    body,
+    p {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 2060px;
+    }
+}
